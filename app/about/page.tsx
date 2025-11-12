@@ -19,7 +19,7 @@ export default function AboutPage() {
           </Link>
           <h1 className="text-5xl lg:text-6xl font-bold text-amber-900 mb-6 text-balance">About Som Sattva</h1>
           <p className="text-xl text-amber-800/70 max-w-3xl leading-relaxed">
-            For over 25 years, Som Sattva has been dedicated to bringing you the purest, most authentic honey from
+            For over 5 years, Som Sattva has been dedicated to bringing you the purest, most authentic honey from
             nature's most trusted sources. We believe in the power of natural wellness and the importance of honest,
             clean nutrition.
           </p>
@@ -30,12 +30,12 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold text-amber-900 mb-4">Our Story</h2>
             <p className="text-amber-800/70 mb-4 leading-relaxed">
-              Som Sattva began with a simple vision: to reconnect people with nature's purest gifts. Our founder, deeply
+              Som Sattva began with a simple vision to reconnect people with nature's purest gifts. Our founder, deeply
               passionate about traditional beekeeping methods and ancient wellness practices, set out to create a honey
               brand that honors both tradition and quality.
             </p>
             <p className="text-amber-800/70 leading-relaxed">
-              Today, we work with ethical beekeepers across the globe to source the finest honey varieties. Every jar
+              Today, we work with ethical beekeepers across India to source the finest honey varieties. Every jar
               represents our commitment to purity, sustainability, and your well-being.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function AboutPage() {
                 <Leaf className="w-6 h-6 text-amber-700 flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-amber-900">Purity First</p>
-                  <p className="text-sm text-amber-800/70">No additives, no shortcuts. Just pure honey.</p>
+                  <p className="text-sm text-amber-800/70">No additives, No shortcuts. Just pure honey.</p>
                 </div>
               </li>
               <li className="flex gap-3">
@@ -67,7 +67,7 @@ export default function AboutPage() {
                 <Droplet className="w-6 h-6 text-amber-700 flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-amber-900">Sustainability</p>
-                  <p className="text-sm text-amber-800/70">Supporting bee ecosystems and beekeepers.</p>
+                  <p className="text-sm text-amber-800/70">Supporting ethical ecosystems and beekeepers.</p>
                 </div>
               </li>
             </ul>
@@ -77,20 +77,20 @@ export default function AboutPage() {
         {/* Stats Section */}
         <div className="grid md:grid-cols-4 gap-8 mb-24 text-center">
           <div className="p-6 bg-amber-50 rounded-xl border border-amber-100">
-            <p className="text-4xl font-bold text-amber-800">25+</p>
+            <p className="text-4xl font-bold text-amber-800">5+</p>
             <p className="text-amber-800/70 mt-2">Years Heritage</p>
           </div>
           <div className="p-6 bg-amber-50 rounded-xl border border-amber-100">
-            <p className="text-4xl font-bold text-amber-800">100K+</p>
+            <p className="text-4xl font-bold text-amber-800">10K+</p>
             <p className="text-amber-800/70 mt-2">Happy Customers</p>
           </div>
           <div className="p-6 bg-amber-50 rounded-xl border border-amber-100">
-            <p className="text-4xl font-bold text-amber-800">50+</p>
+            <p className="text-4xl font-bold text-amber-800">30+</p>
             <p className="text-amber-800/70 mt-2">Honey Varieties</p>
           </div>
           <div className="p-6 bg-amber-50 rounded-xl border border-amber-100">
             <p className="text-4xl font-bold text-amber-800">30+</p>
-            <p className="text-amber-800/70 mt-2">Global Partners</p>
+            <p className="text-amber-800/70 mt-2">Partners</p>
           </div>
         </div>
 

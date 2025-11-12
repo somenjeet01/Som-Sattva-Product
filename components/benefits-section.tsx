@@ -14,7 +14,7 @@ export default function BenefitsSection() {
       icon: Droplet,
       title: "Raw & Unfiltered",
       description:
-        "Retains all natural enzymes and nutrients. 500gm raw forest honey for maximum health benefits.",
+        "Retains all natural enzymes and nutrients — pure raw forest honey packed with maximum health benefits.",
     },
     {
       icon: Award,
@@ -32,7 +32,7 @@ export default function BenefitsSection() {
       icon: Check,
       title: "Amazon Certified",
       description:
-        "Amazon Delivered with secure transaction. 33% discount - Just ₹299 (Original ₹449).",
+        "Amazon Delivered with secure transaction and Prime benefits. Verified quality and authenticity.",
     },
     {
       icon: Shield,

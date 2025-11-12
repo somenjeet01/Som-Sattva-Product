@@ -14,14 +14,14 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-amber-100 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between h-20">
         <Link href="/" className="flex items-center" onClick={handleLinkClick}>
           <Image
             src={"/trace.svg"}
             alt="Som Sattva logo"
-            width={40}
-            height={40}
-            className="h-12 w-40 object-contain"
+            width={80}
+            height={80}
+            className="h-18 w-25 object-contain"
             priority
           />
           {/* <div>
@@ -48,13 +48,13 @@ export default function Header() {
             href="/about"
             className="text-amber-900/70 hover:text-amber-900 transition-colors font-medium text-sm"
           >
-            About
+            About us
           </Link>
           <Link
             href="/contact"
             className="text-amber-900/70 hover:text-amber-900 transition-colors font-medium text-sm"
           >
-            Contact
+            Contact 
           </Link>
           <Link
             href="/gallery"

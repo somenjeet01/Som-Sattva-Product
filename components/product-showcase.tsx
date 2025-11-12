@@ -5,37 +5,37 @@ import { ExternalLink } from "lucide-react";
 export default function ProductShowcase() {
   const products = [
     {
-      name: "Raw Forest Honey 250g",
-      description: "NMR Tested, 100% Pure Raw Forest Honey with no additives",
-      benefits: "Immune boost, Energy support, Natural wellness",
-      image: "/250G Lifestyle 2.png",
-      amazonLink:
-        "https://www.amazon.in/Sattva-Forest-Honey-250gm-Tested/dp/B0FWJQSYF6",
-      price: "₹299",
-      originalPrice: "₹449",
-      discount: "33%",
-      rating: 5.0,
-      reviews: 1,
-    },
-    {
-      name: "Raw Forest Honey",
+      name: "Raw Honey 500g",
       description:
         "Rich blend from multiple wildflower sources, deep amber color",
       benefits: "Antioxidants, Energy boost, Immune support",
       image: "/500 G Lifestyle 2.png",
       amazonLink:
         "https://www.amazon.in/Sattva-Forest-Honey-500gm-Tested/dp/B0FWJQSYF6",
-      price: "₹399",
-      originalPrice: "₹499",
-      discount: "20%",
+      price: "₹299",
+      originalPrice: "₹449",
+      discount: "33%",
       rating: 4.8,
       reviews: 42,
+    },
+    {
+      name: "Raw Forest Honey 250g",
+      description: "NMR Tested, 100% Pure Raw Forest Honey with no additives",
+      benefits: "Immune boost, Energy support, Natural wellness",
+      image: "/250G Lifestyle 2.png",
+      amazonLink:
+        "https://www.amazon.in/Sattva-Forest-Honey-250gm-Tested/dp/B0FWJQSYF6",
+      price: "₹199",
+      originalPrice: "₹299",
+      discount: "33%",
+      rating: 5.0,
+      reviews: 1,
     },
     {
       name: "Bulk Orders",
       description: "For bulk orders, please contact us for inquiries.",
       benefits: "Custom packaging, Wholesale pricing, Premium quality",
-      image: "/placeholder-logo.png", // Stock image
+      image: "/Bulk order.png", // Stock image
       amazonLink: "#", // No Amazon link
       price: "Contact us",
       originalPrice: "",
@@ -92,7 +92,7 @@ export default function ProductShowcase() {
               <p className="text-foreground/60 mb-4">{product.description}</p>
 
               <div className="mb-4 flex items-center justify-between">
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   {product.rating && (
                     <span className="text-sm font-semibold text-primary">
                       ⭐ {product.rating}
@@ -103,7 +103,7 @@ export default function ProductShowcase() {
                       ({product.reviews} reviews)
                     </span>
                   )}
-                </div>
+                </div> */}
                 <div className="text-right">
                   <span className="text-2xl font-bold text-primary">
                     {product.price}
@@ -118,7 +118,7 @@ export default function ProductShowcase() {
 
               {product.benefits && (
                 <div className="mb-6 p-4 rounded-lg bg-secondary/20 backdrop-blur-sm">
-                  <p className="text-sm font-semibold text-accent-foreground mb-1">
+                  <p className="text-sm font-semibold text-ring mb-1">
                     Key Benefits:
                   </p>
                   <p className="text-sm text-foreground/70">

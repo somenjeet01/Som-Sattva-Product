@@ -52,11 +52,11 @@ export default function HeroSection() {
           {/* Stats */}
           <div className="flex gap-8 pt-8 border-t border-accent/20">
             <div>
-              <p className="text-3xl font-bold text-primary">25+</p>
+              <p className="text-3xl font-bold text-primary">5+</p>
               <p className="text-sm text-foreground/60 mt-1">Years Heritage</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-primary">100K+</p>
+              <p className="text-3xl font-bold text-primary">10K+</p>
               <p className="text-sm text-foreground/60 mt-1">Happy Customers</p>
             </div>
             <div>

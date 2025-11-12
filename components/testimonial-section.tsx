@@ -7,18 +7,21 @@ export default function TestimonialSection() {
       role: "Wellness Coach",
       text: "Som Sattva honey has become an essential part of my daily wellness routine. The quality is unmatched!",
       rating: 5,
+      image: "/per1.png",
     },
     {
       name: "Rajesh Kumar",
       role: "Health Enthusiast",
       text: "After using it for 3 months, I noticed a significant improvement in my energy levels. Highly recommend!",
       rating: 5,
+      image: "/per2.png",
     },
     {
       name: "Anjali Desai",
       role: "Nutritionist",
       text: "I recommend Som Sattva to all my clients. The purity and nutrients are exceptional.",
       rating: 5,
+      image: "/per3.png",
     },
   ];
 
@@ -42,7 +45,7 @@ export default function TestimonialSection() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src="/placeholder-user.jpg"
+                  src={testimonial.image}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover"
                 />
