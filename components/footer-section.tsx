@@ -17,22 +17,40 @@ export default function FooterSection() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      setEmail("");
-      setTimeout(() => setSubscribed(false), 3000);
+    if (!email) return;
+
+    try {
+      const response = await fetch("http://localhost:3000/api/newsletter/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setSubscribed(true);
+        setEmail("");
+        setTimeout(() => setSubscribed(false), 3000);
+      } else {
+        const data = await response.json();
+        alert(data.message || "Failed to subscribe. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error subscribing to newsletter:", error);
+      alert("An error occurred. Please try again later.");
     }
   };
 
   return (
     <footer className="bg-linear-to-b from-amber-50 to-amber-100 border-t border-amber-200">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-10">
+        <div className="grid md:grid-cols-4 gap-20 mb-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 h-20 w-80">
+            <div className="flex items-center gap-2 h-20 w-40">
               <img
                 src="/trace.svg"
                 alt="Som Sattva logo"
@@ -42,8 +60,7 @@ export default function FooterSection() {
               />
             </div>
             <p className="text-amber-800/70 my-2 text-sm leading-relaxed">
-              Pure. Honest. Clean Nutrition. Bringing you food as nature
-              intended.
+              Pure. Honest. Clean Nutrition.
             </p>
             <div className="flex gap-4">
               <a
@@ -87,43 +104,21 @@ export default function FooterSection() {
             </div>
           </div>
 
-          {/* Products */}
+          {/* Important Information */}
           <div>
-            <h4 className="font-bold mb-4 text-amber-900">Products</h4>
-            <ul className="space-y-2 text-amber-800/70">
+            <ul className="space-y-6 text-amber-800/70">
               <li>
-                <a
-                  href="https://www.amazon.in/Sattva-Forest-Honey-500gm-Tested/dp/B0FWJQSYF6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-amber-900 transition-colors cursor-pointer flex items-center gap-1"
-                >
-                  Forest Honey <ExternalLink className="w-3 h-3" />
-                </a>
+                <p className="text-sm">
+                  <strong>Warning: </strong> Raw Honey is not recommended for
+                  infants below 12 months.
+                </p>
               </li>
               <li>
-                <Link
-                  href="/shop"
-                  className="hover:text-amber-900 transition-colors cursor-pointer"
-                >
-                  Wildflower Honey
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/shop"
-                  className="hover:text-amber-900 transition-colors cursor-pointer"
-                >
-                  Acacia Honey
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/shop"
-                  className="hover:text-amber-900 transition-colors cursor-pointer"
-                >
-                  View All
-                </Link>
+                <p className="text-sm">
+                  <strong>Crystallization: </strong> Pure honey tends to
+                  crystallize. Keep the bottle in natural sunlight or in warm
+                  water to normalize.
+                </p>
               </li>
             </ul>
           </div>

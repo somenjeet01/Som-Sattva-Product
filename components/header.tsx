@@ -19,9 +19,9 @@ export default function Header() {
           <Image
             src={"/trace.svg"}
             alt="Som Sattva logo"
-            width={80}
-            height={80}
-            className="h-18 w-25 object-contain"
+            width={60}
+            height={60}
+            className="h-16 w-16 object-contain"
             priority
           />
           {/* <div>
@@ -54,7 +54,7 @@ export default function Header() {
             href="/contact"
             className="text-amber-900/70 hover:text-amber-900 transition-colors font-medium text-sm"
           >
-            Contact 
+            Contact
           </Link>
           <Link
             href="/gallery"
@@ -71,7 +71,6 @@ export default function Header() {
             className="p-2 hover:bg-amber-50 rounded-lg transition-colors"
             title="Shopping Cart"
           >
-            <ShoppingCart className="w-5 h-5 text-amber-900" />
           </Link>
           <Link
             href="/shop"

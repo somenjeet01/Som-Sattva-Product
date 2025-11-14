@@ -1,6 +1,6 @@
-"use client"
-import { ArrowRight, Leaf } from "lucide-react"
-import Link from "next/link"
+"use client";
+import { ArrowRight, Leaf } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -10,17 +10,16 @@ export default function HeroSection() {
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 flex flex-col lg:flex-row items-center gap-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center gap-12">
         {/* Left content */}
         <div className="flex-1 flex flex-col gap-8">
           <div>
             <div className="inline-block mb-4 px-4 py-2 rounded-full bg-secondary/50 backdrop-blur-sm flex items-center gap-2">
-              <Leaf className="w-4 h-4 text-accent-foreground" />
-              <p className="text-sm font-semibold text-accent-foreground">
-                Be Natural, Be Pure
+              <p className="text-sm text-xs font-semibold text-amber-900 mb-1">
+              <Leaf className="w-4 h-4 inline-block mr-1" /> Pure. Honest. Clean Nutrition
               </p>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
               <span className="text-primary">Som Sattva</span> Nature's Perfect
               Gift
             </h1>
@@ -52,7 +51,7 @@ export default function HeroSection() {
           {/* Stats */}
           <div className="flex gap-8 pt-8 border-t border-accent/20">
             <div>
-              <p className="text-3xl font-bold text-primary">5+</p>
+              <p className="text-3xl font-bold text-primary">8+</p>
               <p className="text-sm text-foreground/60 mt-1">Years Heritage</p>
             </div>
             <div>

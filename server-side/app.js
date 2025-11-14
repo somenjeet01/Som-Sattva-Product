@@ -5,6 +5,7 @@ dotenv.config();
 const express = (await import("express")).default;
 const cors = (await import("cors")).default;
 const contactRouter = (await import("./routes/contactRoute.js")).default;
+const newsletterRouter = (await import("./routes/newsletterRoute.js")).default;
 
 const app = express();
 
@@ -14,6 +15,8 @@ app.use(cors());
 app.get("/", (req, res) => res.send("Server is Live!"));
 
 app.use("/api/contact", contactRouter);
+
+app.use("/api/newsletter", newsletterRouter);
 
 const PORT = process.env.PORT || 3000;
 

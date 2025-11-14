@@ -14,7 +14,7 @@ export default function BenefitsSection() {
       icon: Droplet,
       title: "Raw & Unfiltered",
       description:
-        "Retains all natural enzymes and nutrients — pure raw forest honey packed with maximum health benefits.",
+        "Retains all natural enzymes and nutrients pure raw forest honey packed with maximum health benefits.",
     },
     {
       icon: Award,
@@ -97,7 +97,12 @@ export default function BenefitsSection() {
                 </li>
                 <li className="flex items-center gap-3 text-foreground/80">
                   <Check className="w-5 h-5 text-primary shrink-0" />
-                  <span>No Additives or Processing</span>
+                  <span>No Additives</span>
+                </li>
+
+                <li className="flex items-center gap-3 text-foreground/80">
+                  <Check className="w-5 h-5 text-primary shrink-0" />
+                  <span>Unprocessed & Unpasteurized</span>
                 </li>
                 <li className="flex items-center gap-3 text-foreground/80">
                   <Check className="w-5 h-5 text-primary shrink-0" />

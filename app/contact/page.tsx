@@ -22,7 +22,7 @@ export default function ContactPage() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/api/contact/add", {
+      const response = await fetch("/api/contact/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
