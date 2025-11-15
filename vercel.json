@@ -28,12 +28,7 @@
       ]
     }
   ],
-  "functions": {
-    "api/**/*.js": {
-      "memory": 512,
-      "maxDuration": 10
-    }
-  },
+  "framework": "nextjs",
   "env": {
     "NEXT_PUBLIC_API_URL": "https://som-sattva-server.vercel.app"
   }
