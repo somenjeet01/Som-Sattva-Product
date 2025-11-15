@@ -42,7 +42,7 @@ export default function HeroSection() {
               href="https://www.amazon.in/Sattva-Forest-Honey-500gm-Tested/dp/B0FWJQSYF6"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-secondary/30 text-foreground rounded-lg font-semibold hover:bg-secondary/50 transition-colors backdrop-blur-sm border border-accent/20"
+              className="px-8 py-4 bg-secondary/30 text-foreground text-center rounded-lg font-semibold hover:bg-secondary/50 transition-colors backdrop-blur-sm border border-accent/20"
             >
               Buy on Amazon
             </a>

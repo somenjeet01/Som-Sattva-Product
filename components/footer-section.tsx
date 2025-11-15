@@ -22,7 +22,7 @@ export default function FooterSection() {
     if (!email) return;
 
     try {
-      const response = await fetch("http://localhost:3000/api/newsletter/subscribe", {
+      const response = await fetch("http://localhost:3000/api/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

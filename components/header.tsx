@@ -70,8 +70,7 @@ export default function Header() {
             href="/shop"
             className="p-2 hover:bg-amber-50 rounded-lg transition-colors"
             title="Shopping Cart"
-          >
-          </Link>
+          ></Link>
           <Link
             href="/shop"
             className="px-6 py-2.5 bg-amber-800 text-white rounded-full font-semibold hover:bg-amber-900 transition-all shadow-md hover:shadow-lg"
@@ -125,6 +124,13 @@ export default function Header() {
               onClick={handleLinkClick}
             >
               Contact
+            </Link>
+            <Link
+              href="/gallery"
+              className="text-amber-900/70 hover:text-amber-900 transition-colors font-medium"
+              onClick={handleLinkClick}
+            >
+              Gallery
             </Link>
             <Link
               href="/shop"
